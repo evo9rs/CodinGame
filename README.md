@@ -2,7 +2,7 @@
 Solutions for CodinGame puzzles that you can find on [here](http://www.Codingame.com)
 
 <h2>EASY:
-<h6>Power of Thor
+<h6>Power of Thor: [Done](CodinGame/EASY/Power of Thor)
 <h6>The Descent
 <h6>Skynet: the Chasm
 <h6>Mars Lander - Level 1
