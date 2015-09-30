@@ -1,0 +1,33 @@
+import sys
+import math
+
+# Auto-generated code below aims at helping you parse
+# the standard input according to the problem statement.
+# ---
+# Hint: You can use the debug stream to print initialTX and initialTY, if Thor seems not follow your orders.
+
+# light_x: the X position of the light of power
+# light_y: the Y position of the light of power
+# initial_tx: Thor's starting X position
+# initial_ty: Thor's starting Y position
+light_x, light_y, initial_tx, initial_ty = [int(i) for i in input().split()]
+ThorX = initial_tx
+ThorY = initial_ty
+# game loop
+while 1:
+    dx = ""
+    dy = ""
+    remaining_turns = int(input())
+    if ThorX > light_x:
+        dx += "W"
+        ThorX +=1
+    elif ThorX < light_x:
+        dx += "E"
+        ThorX -=1
+    if ThorY > light_y:
+        dy += "N"
+        ThorY -= 1
+    elif ThorY < light_y:
+        dy += "S"
+        ThorY += 1
+    print (dy+dx)
